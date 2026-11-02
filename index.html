@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de cocktail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <a href="#" title="Recette de l'Adonis">
+            <img src="M8_Logo.svg" alt="logo" width="10%">
+        </a>
+        <a id="lien" href="https://www.cuisineaz.com/recettes/adonis-cocktail-2826.aspx" target="blank">RECETTE</a>
+        <a id="lien" href="https://www.mixologyatlas.com/fr/recipes/cocktail-adonis-recette" target="blank">INGREDIENTS</a>
+    </header>
+
+    <main id="main_container">
+        <h1>Recette de l'Adonis</h1>
+            <div>
+                <div id="imgCocktail">
+                    <img id="Adonis" src="Adonis Cocktail.jpg" alt="Photo de l'Adonis">
+                    <img id="CocktailDuMois" src="./image/Cocktail-du-mois.png" width="30%" height="30%">
+                </div>
+            <p>L'Adonis a été créé au milieu des années 1890 au Waldorf-Astoria de New York. Son nom dérive de la comédie musicale Broadway du même nom de William Gill, dont la première a eu lieu à New York en 1884 et qui a été la première comédie musicale de Broadway à y être jouée plus de 500 fois. La première mention écrite de la boisson se trouve dans l'ouvrage The Complete Manual of Mixing Drinks de Jacques Straub, paru en 1913. Bien qu'il existe une mention écrite du cocktail plusieurs décennies auparavant, c'est dans le sens d'une boisson équivalente au Turf Club.</p>
+            </div>
+        <nav>
+        <div>
+                <ul>
+                    <h2>Ingrédients</h2>
+                    <li>Xérès (Sherry) : 45 ml</li>
+                    <li>Vermouth rouge (doux) : 45 ml</li>
+                    <li>Amer d'orange (Orange Bitters) : 2 traits</li>
+                    <li>1 zeste d'orange</li>
+                    <li>Glaçons</li>
+                </ul>
+
+                <ol>
+                    <h2>Préparation</h2>
+                    <li>Remplir un verre à mélange de glaçons.</li>
+                    <li>Verser le Xérès, le vermouth rouge et l'amer à l'orange.</li>
+                    <li>Remuer énergiquement avec une cuillère à mélange pendant 20 à 30 secondes.</li>
+                    <li>Filtrer dans une coupette à cocktail préalablement refroidie.</li>
+                    <li>Exprimer les huiles du zeste d'orange au-dessus du verre, puis le déposer dans le cocktail ou sur le bord.</li>
+                </ol>
+        </div>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="Cocktail2.html">Le Blue Lagoon</a></li>
+                <li><a href="Cocktail3.html">Le Aunt Roberta</a></li>
+            </ul>
+        </nav>
+
+        <form id="newsletter" action="#" method="post">
+            <h2>Newsletter</h2>
+
+            <div class="champ">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required minlength="2" maxlength="20" pattern="[A-Za-zÀ-ÿ]{2,20}" title="Entre 2 et 20 lettres (minuscules et majuscules)">
+            </div>
+
+            <div class="champ">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required minlength="2" maxlength="20" pattern="[A-Za-zÀ-ÿ]{2,20}" title="Entre 2 et 20 lettres (minuscules et majuscules)">
+            </div>
+
+            <div class="champ">
+                <label for="email">Adresse mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="champ">
+                <label for="boisson">Quel est votre boisson préférée ?</label>
+                <select id="boisson" name="boisson" required>
+                    <option value="">-- Choisissez une boisson --</option>
+                    <option value="Adonis">Adonis</option>
+                    <option value="Blue Lagoon">Blue Lagoon</option>
+                    <option value="Aunt Roberta">Aunt Roberta</option>
+                </select>
+            </div>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </main>
+
+    <footer>Nos cocktails c'est Thanos</footer>
+</body>
+</html>

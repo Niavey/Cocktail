@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 40px;
+    font-family: "Dosis", sans-serif;
+    color: #234231
+}
+a{
+    font-family: "Source Sans 3", sans-serif;
+}
+body{
+   background-color: #dbdbdb;
+   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+   width:100%;
+   margin:0;
+}
+#main_container{ 
+    max-width:1024px;
+    margin:20px auto;
+    background-color: white;
+    padding: 10px;
+}
+footer{
+    background-color: black;
+    width:100%;
+    color:white;
+    text-align:center;
+    margin-top:10px;
+}
+p:first-of-type{
+    width:45%;
+}
+div{
+    display:flex;
+    justify-content: space-between;
+}
+header{
+    display:flex;
+    width:100%;
+    background-color: black;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 20px;
+    margin-bottom:20px;
+}
+
+#lien{
+    color: white;
+}
+#imgCocktail{
+    position:relative;
+    width:45%;
+}
+#imgCocktail img{
+    width:100%;
+}
+#imgCocktail #CocktailDuMois{
+    position:absolute;
+    right:0;
+    top:0;
+    width:30%;
+    height:auto;
+}
+/* Formulaire Newsletter */
+#newsletter{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #234231;
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+}
+#newsletter h2{
+    font-family: "Dosis", sans-serif;
+    margin: 0;
+    text-align: center;
+}
+#newsletter .champ{
+    flex-direction: column;
+    gap: 5px;
+}
+#newsletter input,
+#newsletter select{
+    padding: 8px;
+    font-size: 16px;
+    background-color: #dbdbdb;
+    border: 3px solid #dbdbdb;
+    outline: none;
+    transition: border-color 0.4s, background-color 0.4s;
+}
+
+#newsletter input:invalid,
+#newsletter select:invalid{
+    border-color: #b20a37;
+}
+
+#newsletter input:valid,
+#newsletter select:valid{
+    border-color: #13D393;
+}
+
+#newsletter input:focus,
+#newsletter select:focus{
+    background-color: #fff;
+}
+#newsletter button{
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
